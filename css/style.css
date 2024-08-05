@@ -1,0 +1,363 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: auto;
+    padding: 20px 0px;
+}
+.navbar-toggler{
+    border: 0px;
+    color:#ffffff00;
+    border-radius: 0px;
+}
+
+
+.navbar-toggler:hover{
+    color: #fff;
+    transition: all, 0.2s;
+    transform: scale(1.3);
+}
+
+.navbar-brand {
+    color: #C7F83E;
+    width: 70%;
+    font-family: 'Anton SC', sans-serif;
+    font-size: 55px;   
+    margin-bottom: 0px; 
+    line-height: 34px;  
+    padding: 20px;
+    
+}
+.navbar-brand span {
+    position: absolute;    
+    font-size: 16px;
+    margin-left: 32px;
+    color: #fff;
+    text-align: right;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+
+}
+.navbar-nav li {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px 30px;        
+    font-size: 20px;
+    width: 100%;
+    text-transform: uppercase;
+}
+/* cambio de color a negro del texto de cada nav-link en hover */
+
+.nav-item:hover{
+    background-color: #C7F83E;
+    transition: all, 0.2s;
+    transform: scale(1.1);
+}
+.navbar-collapse{
+    margin-top: 20px;
+}
+
+.nav-item:hover a{
+    color: #222222;
+}
+
+
+.carousel-item .img {
+    max-width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-slider1{
+    background-image: url(../img/baner_1_cel.jpg);
+}
+.img-slider2{
+    background-image: url(../img/branding.jpg);
+}
+.img-slider3{
+    background-image: url(../img/baner_3.jpg);
+}
+.img-slider4{
+    background-image: url(../img/slider-ux.jpg);
+}
+
+
+.carousel-main{
+    margin-top: 50px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #C7F83E;
+    border-radius: 50%;
+    width: 30px;
+}
+
+/* cambio de estilo los botones de los indicadores del carousel a botones amarillos redondos con el active en el indicador activo */
+.carousel-indicators{
+    height: 50px;
+}
+.carousel-indicators{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive-titulo {
+	font-size: clamp(3rem, 10vw, 8rem);
+    padding: 25px;
+}
+
+.responsive-titulo {
+	background-image: linear-gradient(92deg, #c33eebf1 50%, #c6f83e 80%);
+	-webkit-text-fill-color: #0000;
+	-webkit-background-clip: text;
+}
+
+
+.carousel-indicators{
+    margin-top: 20px;
+}
+
+.carousel-indicators .active{
+    background-color: #C7F83E;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.carousel-caption{  
+    position: absolute;
+    top: 10%;
+	display: flex;	
+	justify-content: center; 
+    flex-direction: column;    
+    border-radius: 10px;    
+    font-size: 20px; 
+    padding: 20px;
+    height: auto;
+    /* efecto de blur en el fondo */
+    backdrop-filter: blur(5px);
+
+}
+.carousel-caption h3,h1{
+    font-weight: 300;       
+    font-family: 'Anton SC', sans-serif;
+    text-align: center;
+}   
+.carousel-caption span{
+    font-weight: 300; 
+    font-size: 50px;       
+    font-family: 'Anton SC', sans-serif;
+}
+
+.btn-call {
+    background-color: #C7F83E;
+    color: #222222;
+    border: 1px solid #C7F83E;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+}
+.btn-call:hover {
+    background-color: #222222;
+    color: #C7F83E;
+    border: 1px solid #C7F83E;
+    transition: all 0.3s ease-in-out;
+}
+.owl-carousel .item{    
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 25px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.owl-carousel .item-proyecto{
+    height: 200px;
+    width: auto;;
+    background-size: cover;
+    background-position: center;    
+}
+
+.item-proyecto1{
+    background-image: url(../img/mockup-aht.jpg);
+}
+
+.item-proyecto2{
+    background-image: url(../img/mockup-brossi.jpg);
+}
+
+.item-proyecto3{
+    background-image: url(../img/mockup-guerrieri.jpg);
+}
+
+.item-proyecto4{
+    background-image: url(../img/mockup-hogar.jpg);
+}
+
+.item-proyecto5{
+    background-image: url(../img/mockup-costabonita.jpg);
+}
+
+.item-branding{
+    background-image: url(../img/branding.jpg);
+}
+.item-design{
+    background-image: url(../img/diseno-web.jpg);
+}
+.item-seo{
+    background-image: url(../img/seo.jpg);
+}
+
+
+.animated-header {
+    display: inline-block;
+    position: relative;
+    color: black;
+    background-color: #C7F83E;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 10px
+}
+
+
+.animated-header:hover::before {
+transform: translateX(0);
+}
+
+.animated-header:hover {
+color: white; /* Color del texto cuando está animado */
+background-color: #8f3ef8;
+}
+footer{
+    background-color: #222222;
+    color: #C7F83E;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.logo-footer a{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    color: #C7F83E;
+    width: 70%;
+    font-family: 'Anton SC', sans-serif;
+    font-size: 55px;   
+    margin-bottom: 0px; 
+    line-height: 34px;  
+    padding: 20px;
+    text-decoration: none;
+}
+.logo-footer a span {
+    position: absolute;    
+    font-size: 16px;    
+    color: #fff;    
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    margin-left: -30px;
+    
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.redes a{
+    color: #C7F83E;
+    font-size: 30px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.redes a:hover{
+    color: #8f3ef8;
+    transform: scale(1.2);
+}
+.accesos-rapidos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;    
+}
+.accesos-rapidos ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;    
+}
+.accesos-rapidos li{
+    margin-bottom: 10px;
+    background-color: #222222;
+    border: 0px;
+}
+.accesos-rapidos h3{
+    color: #C7F83E;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.accesos-rapidos a{
+    color: #C7F83E;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+.accesos-rapidos a:hover{
+    color: #8f3ef8;
+    transform: scale(1.2);
+    
+}
+/* copyright */
+.copyright p a{
+    color: #C7F83E;
+}
+
+@media (min-width: 768px){
+    .img-slider1{
+        background-image: url(../img/baner_1.jpg);
+    }
+    .img-slider2{
+        background-image: url(../img/branding.jpg);
+    }
+    .img-slider3{
+        background-image: url(../img/baner_3.jpg);
+    }
+    .img-slider3{
+        background-image: url(../img/slider-ux.jpg);
+    }
+    .carousel-main{
+        margin-top: 30px;
+    }
+    .carousel-caption{
+        backdrop-filter: blur(0px);
+    }
+
+}
