@@ -7,16 +7,18 @@
     box-sizing: border-box;
 }
 
+.navbar-dark{
+    background-color: #222222;
+}
 .navbar{
     height: auto;
     padding: 20px 0px;
 }
 .navbar-toggler{
     border: 0px;
-    color:#ffffff00;
+    color:#222222;
     border-radius: 0px;
 }
-
 
 .navbar-toggler:hover{
     color: #fff;
@@ -114,12 +116,11 @@
 }
 
 .responsive-titulo {
-	font-size: clamp(3rem, 10vw, 8rem);
-    padding: 25px;
+	font-size: clamp(3.5rem, 10vw, 7rem);
+    padding: 10px;
 }
-
 .responsive-titulo {
-	background-image: linear-gradient(92deg, #c33eebf1 50%, #c6f83e 80%);
+	background-image: linear-gradient(92deg, #c33eebf1 10%, #c6f83e 80%);
 	-webkit-text-fill-color: #0000;
 	-webkit-background-clip: text;
 }
@@ -152,15 +153,16 @@
 }
 .carousel-caption h3,h1{
     font-weight: 300;       
-    font-family: 'Anton SC', sans-serif;
-    text-align: center;
+    font-family: 'Anton SC', sans-serif;    
 }   
 .carousel-caption span{
     font-weight: 300; 
     font-size: 50px;       
     font-family: 'Anton SC', sans-serif;
 }
-
+.boton-call {
+    width: auto;
+}
 .btn-call {
     background-color: #C7F83E;
     color: #222222;
@@ -168,8 +170,7 @@
     font-size: 15px;
     font-weight: 600;
     padding: 10px 20px;
-    border-radius: 50px;
-    width: auto;
+    border-radius: 50px;    
     transition: all 0.3s ease-in-out;
 }
 .btn-call:hover {
@@ -227,6 +228,19 @@
 }
 .item-seo{
     background-image: url(../img/seo.jpg);
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 
@@ -340,24 +354,37 @@ footer{
     color: #C7F83E;
 }
 
+.contacto{
+    background-image: url(../img/textura.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    color: #C7F83E;
+}
+
 @media (min-width: 768px){
     .img-slider1{
-        background-image: url(../img/baner_1.jpg);
+        background-image: url(../img/slider_design.jpg);
     }
     .img-slider2{
-        background-image: url(../img/branding.jpg);
+        background-image: url(../img/slider_brand_2.jpg);
     }
     .img-slider3{
-        background-image: url(../img/baner_3.jpg);
+        background-image: url(../img/slider_seo_3.jpg);
     }
-    .img-slider3{
-        background-image: url(../img/slider-ux.jpg);
+    .img-slider4{
+        background-image: url(../img/slider_ux.jpg);
     }
     .carousel-main{
         margin-top: 30px;
     }
     .carousel-caption{
         backdrop-filter: blur(0px);
+        width: 40%;        
+    }
+    .l-50{
+        left: 50%;
     }
 
 }

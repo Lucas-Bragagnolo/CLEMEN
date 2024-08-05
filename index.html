@@ -19,15 +19,14 @@
     <link rel="stylesheet" href="./css/style.css?">
 
 
-    <title>CLEMEN | DISEÑO WEB</title>
+    <title>CLEMEN. | DISEÑO WEB</title>
 
 
 </head>
 <body>
 
 <!-- MENU -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-    
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top">    
     <div class="container-fluid">
         <a class="navbar-brand" href="#">CLEMEN. <br> <span>DESARROLLO WEB</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -39,13 +38,13 @@
             <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Servicios</a>
+            <a class="nav-link" href="#servicios">Servicios</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
             </li>
         </ul>
         </div>
@@ -63,7 +62,7 @@
     </button>
     <button type="button" class="no-active" data-bs-target="#demo" data-bs-slide-to="2">
     </button>
-    <button type="button" class="no-active" data-bs-target="#demo" data-bs-slide-to="2">
+    <button type="button" class="no-active" data-bs-target="#demo" data-bs-slide-to="3">
     </button>
     </div>
     <!-- The slideshow/carousel -->
@@ -71,33 +70,43 @@
         <div class="carousel-item active">
             <div class="img img-slider1"></div>
             <div class="carousel-caption">
-                <h1 class="responsive-titulo">DISEÑO WEB</h1>
-                <p class="responsive-texto">Transformamos ideas en experiencias digitales.</p>
-                <a href="#" class="btn btn-primary btn-call">Conocé nuestros proyectos</a>                            
+                <h1 class="responsive-titulo text-start">DISEÑO WEB</h1>
+                <p class="text-start">Transformamos ideas en experiencias digitales.</p>
+                <div class="boton-call text-start">
+                    <a href="#proyectos" class="btn btn-primary btn-call">Conocé nuestros proyectos</a>
+                </div>
+                                            
             </div>
         </div>
-        <div class="carousel-item ">
+
+        <div class="carousel-item">
+            <div class="img img-slider4"></div>
+            <div class="carousel-caption l-50">
+                <h3 class="responsive-titulo">DISEÑO UX</h3>
+                <p class="text-end">Creamos experiencias digitales centradas y adaptadas para todos usuarios.</p>
+                <div class="boton-call text-end"><a href="#" class="btn btn-primary btn-call">Conocé el proceso</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="carousel-item">
             <div class="img img-slider3"></div>
             <div class="carousel-caption">
-                <h3 class="responsive-titulo">VISIBILIDAD WEB</h3>
-                <p class="responsive-texto">Enfoca en mejorar la visibilidad en línea de los clientes</p>
-                <a href="#" class="btn btn-primary btn-call">Descubrí cómo lo hacemos</a>
+                <h3 class="responsive-titulo text-start">VISIBILIDAD WEB</h3>
+                <p class="text-start">Optimizamos tu sitio para que aparezcas dónde y cómo tus clientes te buscan.</p>
+                <div class="boton-call text-start"><a href="./pages/seo.html" class="btn btn-primary btn-call">Descubrí cómo lo hacemos</a></div>
+                
             </div>
-        </div>
-        <div class="carousel-item ">
-            <div class="img img-slider4"></div>
-            <div class="carousel-caption ">
-                <h3 class="responsive-titulo">DISEÑO UX</h3>
-                <p class="responsive-texto">Creamos experiencias digitales centradas y adaptadas para todos usuarios.</p>
-                <a href="#" class="btn btn-primary btn-call">Conocé más</a>
-            </div>
-        </div>
+        </div>        
         <div class="carousel-item ">
             <div class="img img-slider2"></div>
-            <div class="carousel-caption">
-                <h3 class="responsive-titulo">IDENTIDAD VISUAL</h3>
-                <p class="responsive-texto">Construimos la identidad de tu negocio</p>
-                <a href="#" class="btn btn-primary btn-call">Conocé más</a>
+            <div class="carousel-caption l-50">
+                <h3 class="responsive-titulo text-end">IDENTIDAD VISUAL</h3>
+                <p class="text-end">Tu marca es tu historia, construimos la imagen de tu negocio.</p>
+                <div class="boton-call text-end">
+                    <a href="./pages/branding.html" class="btn btn-primary btn-call">Conocé más</a>
+                </div>
+                
             </div>
         </div>
 
@@ -119,32 +128,88 @@
     </div>
     <div class="container d-flex ">
         <div class="owl-carousel owl-one owl-theme justify-content-center align-items-center">
+            <div class="item item-design"><h4 class="animated-header">SITIOS WEB</h4></div>
             <div class="item item-branding">                
                 <h4 class="animated-header">BRANDING</h4>
             </div>
-            <div class="item item-design"><h4 class="animated-header">SITIOS WEB</h4></div>
             <div class="item item-seo"><h4 class="animated-header">SEO</h4></div>
     </div>
 </section>
 <section class="jumbotron">
-    <div class="container-fluid">
+    <div class="container text-center p-4">
+        <div class="row">
+            <div class="col-auto">
+                <h2 class="responsive-titulo text-center">¿Tu sitio necesita un cambio de imagen?</h2>
+                <p>Reinventamos tu web con un <strong>diseño innovador e interactivo</strong> llevando la presencia digital de tu negocio al siguiente nivel</p>
+                <a href="" class="btn btn-primary btn-call"><i class="fa-brands fa-whatsapp me-3"></i>Contactános</a>
+        </div>
 
+        
     </div>
 </section>
-<section class="call-action m-2" id="call-action">
+<section class="call-action m-2" id="proyectos">
     <div class="container">
         <h2 class="p-4 text-center">PROYECTOS</h2>
     </div>    
     <div class="container-fluid">
         <div class="row">
             <div class="owl-carousel owl-two owl-theme justify-content-center align-items-center">
-                <div class="item-proyecto item-proyecto1"></div>
-                <div class="item-proyecto item-proyecto2"></div>
-                <div class="item-proyecto item-proyecto3"></div>
-                <div class="item-proyecto item-proyecto4"></div>
-                <div class="item-proyecto item-proyecto5"></div>
+                <div class="item-proyecto item-proyecto1">
+                    <a href="https://alzuarteaht.com.ar" target="_blank">
+                        <div class="overlay"></div>
+                    </a>
+                </div>
+                <div class="item-proyecto item-proyecto2">
+                    <a href="https://lucas-bragagnolo.github.io/Brossi/" target="_blank">
+                        <div class="overlay"></div>
+                    </a>
+                </div>
+                <div class="item-proyecto item-proyecto3">
+                    <a href="https://guerrieripropiedades.com" target="_blank">
+                        <div class="overlay"></div>
+                    </a>                    
+                </div>
+                <div class="item-proyecto item-proyecto4">
+                    <a href="https://hogardemontaña.com.ar" target="_blank">
+                        <div class="overlay"></div>
+                    </a>                    
+                </div>
+                <div class="item-proyecto item-proyecto5">
+                    <a href="https://gesellcostabonita.com.ar/" target="_blank">
+                        <div class="overlay"></div>
+                    </a>                    
+                </div>
 
         </div>
+        </div>
+    </div>
+</section>
+<section class="contacto mt-4" id="contacto">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="p-4 text-center">CONTACTO</h2>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 offset-lg-3">
+                <div class="contacto-formulario">
+                    <form action="">
+                        <div class="form-group mb-2">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="form-group mb-2">    
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                            
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-call">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -175,7 +240,7 @@
         <!-- COPYRIGHT -->
 
         <div class="copyright">
-            <p>Copyright © 2023 Clemente. Todos los derechos reservados. Design by: <a href="#">CLEMEN</a></p>
+            <p>Copyright © 2024 CLEMEN Todos los derechos reservados. Design by: <a href="#">CLEMEN</a></p>
         </div>
     </div>
 </footer>
