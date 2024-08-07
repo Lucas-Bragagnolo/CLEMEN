@@ -24,29 +24,44 @@
 
 </head>
 <body>
-
+    <div class="floating-button">
+        <a href="https://wa.me/+542325420041" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
 <!-- MENU -->
 <nav class="navbar navbar-expand-sm navbar-dark fixed-top">    
     <div class="container-fluid">
         <a class="navbar-brand" href="#">CLEMEN. <br> <span>DESARROLLO WEB</span></a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
+            <input type="checkbox" id="checkbox" data-bs-toggle="collapse" data-bs-target="#menu">
+            <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
         </button>
         <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#servicios">Servicios</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
-        </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </div>
     </div>
     </nav>
@@ -80,19 +95,9 @@
         </div>
 
         <div class="carousel-item">
-            <div class="img img-slider4"></div>
-            <div class="carousel-caption l-50">
-                <h3 class="responsive-titulo">DISEÑO UX</h3>
-                <p class="text-end">Creamos experiencias digitales centradas y adaptadas para todos usuarios.</p>
-                <div class="boton-call text-end"><a href="#" class="btn btn-primary btn-call">Conocé el proceso</a>
-                </div>
-                
-            </div>
-        </div>
-        <div class="carousel-item">
             <div class="img img-slider3"></div>
             <div class="carousel-caption">
-                <h3 class="responsive-titulo text-start">VISIBILIDAD WEB</h3>
+                <h3 class="responsive-titulo text-start">SEO </h3>
                 <p class="text-start">Optimizamos tu sitio para que aparezcas dónde y cómo tus clientes te buscan.</p>
                 <div class="boton-call text-start"><a href="./pages/seo.html" class="btn btn-primary btn-call">Descubrí cómo lo hacemos</a></div>
                 
@@ -100,7 +105,7 @@
         </div>        
         <div class="carousel-item ">
             <div class="img img-slider2"></div>
-            <div class="carousel-caption l-50">
+            <div class="carousel-caption text-end l-50">
                 <h3 class="responsive-titulo text-end">IDENTIDAD VISUAL</h3>
                 <p class="text-end">Tu marca es tu historia, construimos la imagen de tu negocio.</p>
                 <div class="boton-call text-end">
@@ -122,9 +127,18 @@
     </div>
 
 </main>
+
+<section class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="p-4 text-center">Hola! somos CLEMEN.</h2>
+                <h4>Transformamos ideas en experiencias digitales</h4>
+                <p>Somos una agencia de diseño digital que se enfoca en el desarrollo de sitios web, diseño de identidad visual y optimización de motores de búsqueda. Nuestro objetivo es ayudarte a llevar la presencia digital de tu negocio al proximo nivel</p>
+</section>
 <section class="servicios m-2" id="servicios">
     <div class="container">
-        <h2 class="p-4 text-center">SERVICIOS</h2>
+        <h2 class="p-4 text-center">Somos especialistas en</h2>
     </div>
     <div class="container d-flex ">
         <div class="owl-carousel owl-one owl-theme justify-content-center align-items-center">
@@ -138,9 +152,9 @@
 <section class="jumbotron">
     <div class="container text-center p-4">
         <div class="row">
-            <div class="col-auto">
+            <div class="col-auto p-4 text-center blur">
                 <h2 class="responsive-titulo text-center">¿Tu sitio necesita un cambio de imagen?</h2>
-                <p>Reinventamos tu web con un <strong>diseño innovador e interactivo</strong> llevando la presencia digital de tu negocio al siguiente nivel</p>
+                <p class="text-white">Reinventamos tu web con un <strong>diseño innovador e interactivo</strong> llevando la presencia digital de tu negocio al siguiente nivel</p>
                 <a href="" class="btn btn-primary btn-call"><i class="fa-brands fa-whatsapp me-3"></i>Contactános</a>
         </div>
 
@@ -244,6 +258,9 @@
         </div>
     </div>
 </footer>
+<!-- Agrego el boton de ir arriba -->
+<a href="#" class="ir-arriba"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Bootstrap script -->
     <!--jqery script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Owl carousel script -->
