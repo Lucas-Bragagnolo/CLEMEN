@@ -176,13 +176,9 @@ body{
     background-image: url(../img/slider-ux.jpg);
 }
 
-
-.carousel-main{
-    margin-top: 50px;
-}
 .carousel-caption{
     position: absolute;
-    bottom: 20%;
+    top: 10%;
     padding: 20px;    
     backdrop-filter: blur(10px);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
@@ -206,8 +202,9 @@ body{
     align-items: center;
 }
 
+
 .responsive-titulo {
-	font-size: clamp(3.2rem, 10vw, 7rem);
+	font-size: clamp(1.2rem, 10vw, 5rem);
     padding: 15px;
     font-family: 'Anton SC', sans-serif;
 }
@@ -268,7 +265,7 @@ body{
 
 .owl-carousel .item-proyecto{
     height: 250px;
-    width: auto;;
+    width: auto;
     background-size: cover;
     background-position: center;    
 }
@@ -436,13 +433,28 @@ footer{
 }
 
 .contacto{
-    background-image: url(../img/textura.jpg);
+    background-image: url(../img/2148346930.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 50px;
     color: #C7F83E;
 }
+.contacto h2{
+    font-size: 50px;
+}
+
+.bg-blur{
+    backdrop-filter: blur(5px);
+    background-color: #22222281;
+}
+
+.anton{
+    font-family: 'Anton SC', sans-serif;
+    text-transform: uppercase;
+}
+
+
 
 .jumbotron{
     background-image:  url(../img/106179.jpg);
@@ -509,12 +521,12 @@ footer{
 @media only screen and (min-width: 768px) {
 
     .carousel-item .img{
-        height: 100vh;
+        height: 80vh;
     }
-    .carousel-main{
-        margin-top: 30px;
-    }   
+  
     .carousel-caption{
+        top: 20%;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
