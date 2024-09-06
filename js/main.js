@@ -1,64 +1,62 @@
-/* Codigo JS */
+function openTab(evt, tabName) { 
+    const tabcontent = document.getElementsByClassName('tabcontent');
+    
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    
+    const tablinks = document.getElementsByClassName('tablink'); 
 
-/* Declaracion de variables */
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active-tab";
+}
 
-var nombre;
-
-
-/* Asingacion de valores */
-
-nombre="Lucas"; /* string o cadena de caracteres */
-console.log(nombre);
-/* Inicializacion */
-
-let apellidoPaterno = "Perez";
-let edad = 20;
-
-/* Constantes */
-const PI=3.1416;
-const GRAVEDAD=9.8;
-
-/* variables dentro de variables o concatenación ( el + en valor numerico se suma y cuando es string lo concatena o agrega a la cadena) */
-
-let nombreCompleto=nombre + " " + apellidoPaterno;
-
-
-let resultado= PI + GRAVEDAD + 5.4;
-
-edad="24"; /* Cambio de tipo de dato de numeral a string */
-
-
-/* Métodos de entrada y salida de datos */
-/* metodo salida */
-//console.log(nombre);
-//console.log(edad);
-//console.log("El resultado de la suma de " + PI + " y " + GRAVEDAD + " es: " + resultado);
-
-//console.log(PI + GRAVEDAD);
-
-//alert("Qué hace loco");
-
-/* metodo entrada */
-//Lolprompt("Hoola como te llamas?");
-/* 
-nombre =prompt("Hola, como te llamas?");
-console.log("El nombre es: " + nombre); */
-
-let nombre2 = prompt("Hola, como te llamas?");
-
-console.log(nombre2);
-
-
-let num1=parseInt(prompt("Ingresa el primer numero:"));
-let num2=parseInt(prompt("Ingresa el segundo numero:"));
-
-let num3=parseFloat(prompt("Ingresa el numero con decimal: "));
+//la funcion de arriba tambien hace que al principio solo se muestre el tab1
 
 
 
 
+//selector por id
+//const onePage = document.getElementById('onepage') ;
+
+//console.log(onePage);
 
 
-let resultadoSuma= num1+num2;
+//selector por clase
+const tabcontent = document.getElementsByClassName('tabcontent');
+const tablinks = document.getElementsByClassName('tablink');
 
-console.log("El resultado de la suma es: ");
+// agregar clases a los elementos
+//tabcontent[1].className = "border p-2 text-center";
+
+//crear nodo
+const parrafo = document.createElement('p');
+parrafo.innerText= "soy un parrafo creado con js";
+
+//agregar el nodo al documento
+tabcontent[1].appendChild(parrafo);
+
+//eliminar elementos
+
+
+//tablinks[0].className = "active-tab";
+
+
+//acceedar al valor de los inputs   
+const inputName = document.querySelectorAll('input[type=text]#nombre');
+
+inputName[0].value = "Lucas";
+
+
+//interpolacion
+const producto = {
+    nombre: 'Monitor 20 pulgadas',
+    precio: 300,
+    disponible: true
+};
+let template = `Producto: ${producto.nombre}, Precio: ${producto.precio}, Disponible`;
+
+

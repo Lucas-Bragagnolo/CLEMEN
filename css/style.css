@@ -14,7 +14,7 @@ body{
 }
 .navbar{
     height: auto;
-    padding: 10px 10px 10px 10px;
+    padding: 30px 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -38,7 +38,7 @@ body{
     font-size: 55px;   
     margin-bottom: 0px; 
     line-height: 34px;  
-    padding: 20px;
+    padding: 10px;
     
 }
 .navbar-toggler:focus{
@@ -54,12 +54,13 @@ body{
     font-family: "Rubik", sans-serif;
     font-style: normal;
 
+
 }
 .navbar-nav li {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    padding: 10px 30px;        
+    padding: 10px;        
     font-size: 20px;
     width: 100%;
     text-transform: uppercase;
@@ -72,7 +73,7 @@ body{
     color: #C7F83E;
     font-weight: 600;
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
     margin-right: 10px;
@@ -156,7 +157,7 @@ body{
 
 .carousel-item .img {
     max-width: 100%;
-    height: 85vh;
+    height: 90vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -178,8 +179,9 @@ body{
 
 .carousel-caption{
     position: absolute;
-    top: 10%;
-    padding: 20px;    
+    top: 0%;
+    height: auto;
+    padding: 10px;    
     backdrop-filter: blur(10px);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
@@ -204,7 +206,7 @@ body{
 
 
 .responsive-titulo {
-	font-size: clamp(1.2rem, 10vw, 5rem);
+	font-size: clamp(1.2rem, 10vw, 4rem);
     padding: 15px;
     font-family: 'Anton SC', sans-serif;
 }
@@ -262,6 +264,20 @@ body{
 .item p{
     font-size: 1rem;
 }
+.item a{
+  text-decoration: none;
+  color :#222222;
+  background-color: #C7F83E;
+  width: 100%;
+  padding: 10px 0px 0px 10px;
+  margin-bottom: 10px;
+  transition: all 0.2s;
+}
+.item a:hover {
+    background-color: #8f3ef8;
+    color: #fff;
+    transition: all 0.2s;
+}
 
 .owl-carousel .item-proyecto{
     height: 250px;
@@ -276,6 +292,14 @@ body{
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
     filter: grayscale(0%)
+}
+
+.owl-two .item-logo {
+    height: 200px;
+    width: auto;
+    background-size: cover;
+    background-position: center;  
+    
 }
 
 .item-proyecto1{
@@ -296,6 +320,25 @@ body{
 
 .item-proyecto5{
     background-image: url(../img/mockup-costabonita.jpg);
+}
+.item-logo1{
+    background-image: url(../img/logosBranding/aht.png);
+}
+
+.item-logo2{
+    background-image: url(../img/logosBranding/costabonita-1.png);
+}
+
+.item-logo3{
+    background-image: url(../img/logosBranding/costabonita.png);
+}
+
+.item-logo4{
+    background-image: url(../img/logosBranding/hogarmontaña.png);
+}
+
+.item-logo5{
+    background-image: url(../img/logosBranding/planb.png);
 }
 
 .item-branding{
@@ -322,16 +365,6 @@ body{
 }
 
 
-.animated-header {
-    display: inline-block;
-    position: relative;
-    color: black;
-    background-color: #C7F83E;
-    width: 100%;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    padding: 10px
-}
 
 
 .animated-header:hover::before {
@@ -518,19 +551,222 @@ footer{
     transform: scale(1.1);
 }
 
-@media only screen and (min-width: 768px) {
+.no-active-movile{
+    display: none;
+}
 
+
+
+/* Diseño web */
+.main-webdesign{
+    background-image: url(../img/2148346930.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    color: #fff
+
+}
+
+
+.main-webdesign p{
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+.main-webdesign h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Anton SC', sans-serif;
+    color: #C7F83E;
+}
+
+.main-webdesign h3{
+
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 16px;
+
+    color: #fff;
+}
+
+.titulo-webdesign h3 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 16px;
+    padding: 10px 15px;    
+}
+.titulo-webdesign h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Anton SC', sans-serif;
+    color: #8f3ef8;
+}
+
+
+
+
+.card{
+    height: auto;
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/106179.jpg');
+    background-position: center;
+    background-size: cover;    
+    border: 0px;
+    color:#fff
+}
+.card-branding {
+    background-image: url('../img/2148346930.jpg');
+}
+.card-body {
+    background-image: linear-gradient(to right top, #2b2b2bc9, #2e2e2eda) ,url('../img/106179.jpg');
+    background-position: bottom;
+    background-size: cover; 
+    border-radius: 25px;                            
+    border: 3px solid #C7F83E;
+}
+.card-body-branding {
+    background-image: linear-gradient(to right top, #2b2b2bc9, #2e2e2eda) ,url('../img/2148346930.jpg');
+}
+.card h4 {
+    font-size: 40px;
+    color: #C7F83E
+}
+.tabs{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px
+}
+.tablink{
+    color: #fff;
+    background-color: #c7f83e;
+    font-size: 14px;
+    padding: 10px; 
+    border-radius: 20px; 
+    color: #222222;       
+    border: 2px solid #222222;
+    transition: all 0.2s ease-in-out;
+}
+.tablink:hover{
+    color: #fff;
+    background-color: #8f3ef8;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+.active-tab{
+    color: #fff;
+    background-color: #8f3ef8;
+    font-size: 14px;
+    padding: 10px; 
+    border-radius: 20px; 
+    transform: scale(1.05);
+    color: #ffffff;       
+
+}
+
+.no-muestro {
+    display: none;
+}
+
+.tipos-sitios h4{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Anton SC', sans-serif;
+    color: #8f3ef8;
+    text-transform: uppercase;
+    padding: 20px;    
+}
+
+.card-tipo-sitio{
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.card-tipo-sitio p{
+    text-align: center;
+}
+
+.card-adicionales h4{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Anton SC', sans-serif;
+    color: #C7F83E;
+    text-transform: uppercase;
+
+}
+
+.card-adicionales p{
+    text-align: center;  
+    color :#fff;  
+}
+
+.card-adicionales {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 3px solid #8f3ef8;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #222222d8;
+}
+.desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+        padding: 0px 0px 10px 0px;
+    }
     .carousel-item .img{
         height: 80vh;
     }
-  
-    .carousel-caption{
-        top: 20%;
+    .no-active-desktop{
+        display: none;
+    }
+    .no-active-movile{
+        display: block;
+    }
+    .desktop {
+        display:  block;
+    }
+
+    .carousel-caption{     
+        margin-top: 15px;   
         height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;        
+    }
+    .carousel-caption img {
+        width: 70%;
+        margin-bottom: 20px;
     }
 
     .nav-item:hover{
@@ -543,11 +779,53 @@ footer{
        left: 50%;
     }
     
+
+    .main-webdesign h1{
+        font-size: 100px;
+    }
+    .main-webdesign p{
+        width: 500px;
+    }
+    .mockup-1{
+
+        width: 70%;
+    }
+
+
+    .mockup-2{
+        position: absolute;
+        width: 40%;
+        left: 50%;
+        top: 90%;
+    }
+
+    .proceso h3{
+        font-size: 25px;
+        font-weight: 200;
+        font-style: italic;
+    }
+    .proceso h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    .card{
+        height: 380px;
+    }
+    .card-branding {
+        height: 250px;
+    }
+
+    .titulo-webdesign h2{
+
+        font-size: 60px;
+
+    }
+
+    .card-adicionales {
+        height: 250px;
+    }
     
 
-    .navbar-brand {
-        padding-top: 5px;
-    }
 
 }
 
